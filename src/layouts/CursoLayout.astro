@@ -1,0 +1,9 @@
+---
+interface Props { title: string; description?: string }
+const {title,description="Curso de Nextflow y nf-core"}=Astro.props;
+---
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content={description}/><title>{title}</title></head><body><main><slot /></main></body></html>
+<style is:global>
+:root{color-scheme:light}body{font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.7;color:#1d2939;background:#f5f7fb;margin:0}main{max-width:920px;margin:40px auto;padding:48px 56px;background:white;border-radius:16px;box-shadow:0 8px 30px #1d293910}h1{color:#173b67;border-bottom:2px solid #dbe8f5;padding-bottom:12px;margin-top:2em}h1:first-child{margin-top:0}h2{color:#245987;margin-top:1.6em}p,li{font-size:1rem}pre{overflow-x:auto;background:#102236;color:#f2f6fc;border-radius:9px;padding:18px}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}p code,li code,td code{background:#edf2f8;padding:2px 5px;border-radius:4px;color:#183c62}table{border-collapse:collapse;width:100%;margin:20px 0}th,td{border:1px solid #d7e1ed;padding:10px 12px;text-align:left}th{background:#eaf1f8}tr:nth-child(even){background:#f8fafc}@media(max-width:700px){main{margin:0;padding:22px;border-radius:0}h1{font-size:1.55rem}}
+</style>
